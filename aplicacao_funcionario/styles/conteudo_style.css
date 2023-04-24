@@ -1,0 +1,107 @@
+main{
+   display: grid;
+   justify-items: center;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: .7rem auto;
+   font-size: 12pt;
+}
+
+/* icone do perfil */
+.container_arquivoRece .identificacao_envio .icon_person{
+   width: 2.4rem;
+   border-radius: 15%;
+}
+
+/* cotainer de arquivo recebido */
+.container_arquivoRece{
+   width: 26rem;
+   height: auto;
+   background-color: #D9D9D9;
+   border-radius: 5px;
+   border: 1px solid rgba(255, 255, 255, 0.125);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   margin: .8rem;
+
+}
+
+.ideti_remetente{
+   display: flex;
+   text-align: center;
+}
+
+.container_arquivoRece .identificacao_envio{
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem 1rem;
+   font-size: 12pt;
+}
+
+.container_arquivoRece .status_arquivo{
+   background-color: var(--azul-arquivo-recebido);
+   width: 100%;
+   height: 2rem;
+   border-radius: 4px 4px 0 0;
+}
+
+.info_arquivo{
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem 1rem;
+   font-size: 14pt;
+}
+
+.info_arquivo h5{
+   line-height: 2rem;
+}
+
+/* popup style */
+.div_popup{
+   display: none;
+   background-color: rgba(0, 0, 0, .5);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.popup{
+   color: #fff;
+   text-align: center;
+   width: 100%;
+   max-width: 33rem;
+   margin: 10% auto;
+   padding: 1.2rem;
+   background: #2E4D04;
+   border-radius: 5px;
+   position: relative;
+}
+
+.popup_container h3{
+   margin: 1rem auto;
+}
+.popup_button{
+   padding: .4rem 1rem;
+   border: none;
+   border-radius: 3px;
+}
+
+.popup_close{
+   position: absolute;
+   top: 5px;
+   right: 10px;
+   cursor: pointer;
+}
+
+textarea{
+   padding: .6rem 2rem;
+   width: 22rem;
+   height: 7rem;
+   resize: none;
+}
+
+textarea,.popup_button{
+   display: block;
+   margin: 1rem auto;
+
+}
